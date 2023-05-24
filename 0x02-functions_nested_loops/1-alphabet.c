@@ -2,11 +2,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
- *
- * print_alphabet - prints the lower alphabet with new 
+ * print_alphabet - Prints the lower alphabet with new
  */
 
 
