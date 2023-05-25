@@ -17,8 +17,7 @@ void times_table(void)
 		{
 			int results = row * column;
 
-			printf("%2d ,", results);
-			
+			printf("%2d, ", results);
 		}
 		printf("\n");
 	}
