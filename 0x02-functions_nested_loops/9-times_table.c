@@ -18,6 +18,11 @@ void times_table(void)
 			int results = row * column;
 
 			printf("%2d,", results);
+
+			if (row < 10)
+			{
+				printf(" ");
+			}
 		}
 		printf("\n");
 	}
