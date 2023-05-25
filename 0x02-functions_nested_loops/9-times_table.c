@@ -17,12 +17,8 @@ void times_table(void)
 		{
 			int results = row * column;
 
-			printf("%2d", results);
-
-			if (column != 9)
-			{
-				printf(", ");
-			}
+			printf("%2d ,", results);
+			
 		}
 		printf("\n");
 	}
