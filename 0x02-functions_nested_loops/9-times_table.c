@@ -17,11 +17,11 @@ void times_table(void)
 		{
 			int results = row * column;
 
-			printf("%2d,", results);
+			printf("%2d", results);
 
-			if (row < 10)
+			if (column != 9)
 			{
-				printf(" ");
+				printf(", ");
 			}
 		}
 		printf("\n");
