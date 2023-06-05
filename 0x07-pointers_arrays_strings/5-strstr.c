@@ -10,7 +10,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *h = haystack;
-        char *n = needle;
+	char *n = needle;
 
 
 	if (haystack == NULL || needle == NULL)
