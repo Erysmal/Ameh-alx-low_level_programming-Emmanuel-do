@@ -2,25 +2,26 @@
 
 /**
  * rot13 - Function that encode a string using rot13
- * @str: String to be encoded
- * Return: (str)
+ * @s: String to be encoded
+ * Return: (s)
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	char *ptr = str;
+	int i;
+	int j;
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (*ptr != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((*ptr >= 'A' && *ptr <= 'M') || (*ptr >= 'a' && *ptr <= 'm'))
+		for (j = 0; j < 52; j++)
 		{
-			*ptr += 13;
+			if (s[i] == data1[j])
+			{
+				s[i] = datarot[j];
+				break;
+			}
 		}
-		else if ((*ptr >= 'N' && *ptr <= 'Z') || (*ptr >= 'n' && *ptr <= 'z'))
-		{
-			*ptr -= 13;
-		}
-
-		ptr++;
 	}
-	return (str);
+	return (s);
 }
